@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-cli-homework-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "start:dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olgashulz/nodejs-CLI-homework-01.git"
+  },
+  "author": "Olgashulz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Olgashulz/nodejs-CLI-homework-01/issues"
+  },
+  "homepage": "https://github.com/Olgashulz/nodejs-CLI-homework-01#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "shortid": "^2.2.16"
+  }
+}
