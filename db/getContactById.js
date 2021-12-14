@@ -1,12 +1,18 @@
-const listContacts = require("./listContacts");
+const getContactsList = require("./getContactsList");
 
 const getContactById = async (id) => {
-    const contacts = await listContacts();
-    const result = contacts.find(item => item.id === id);
-    if (!result) {
-        return null;
+    try {
+        const contacts = await getContactsList();
+        const result = contacts.find((item) => item.id === id);
+        if (!result) {
+            return null;
+        }
+        return console.table(result);
+    } catch (error) {
+        console.log(error);
+
     }
-    return result;
 }
 
 module.exports = getContactById;
+

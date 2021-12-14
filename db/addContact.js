@@ -1,26 +1,25 @@
 const shortid = require("shortid");
-// const fs = require("fs/promises");
 
-// const contactsPath = require("./contactsPath");
+const getContactsList = require("./getContactsList");
 const updateContactsList = require("./updateContactsList");
 
-const listContacts = require("./listContacts");
-
-
-
-
-const addContact = async (contact) => {
-    const newContact = {
-        ...contact,
-        id: shortid.generate(),
-    };
-
-    const contacts = await listContacts();
-    // console.log(contacts)
-    contacts.push(newContact);
-    await updateContactsList(contacts);
-    return newContact;
-}
+const addContact = async (name, email, phone) => {
+    try {
+        const newContact = {
+            id: shortid.generate(),
+            name,
+            email,
+            phone
+        };
+        // console.log("newContact:", newContact);
+        const contacts = await getContactsList();
+        contacts.push(newContact);
+        await updateContactsList(contacts);
+        console.table(contacts);
+        return newContact;
+    } catch (error) {
+        console.log(error);
+    }
+};
 
 module.exports = addContact;
-
