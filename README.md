@@ -1,9 +1,9 @@
 ## nodejs-cli-homework-01
 
-- Получаем и выводим весь список контактов в виде таблицы: [getContactsList](https://prnt.sc/22yqumn)
+- Получаем и выводим весь список контактов в виде таблицы: [getContactsList](https://ibb.co/y0jyy9B)
 
-- Получаем контакт по id: [getContactById](https://prnt.sc/22yr0za)
+- Получаем контакт по id: [getContactById](https://ibb.co/QYb5fKf)
 
-- Добавялем контакт: [addContact](https://prnt.sc/22yr9td)
+- Добавялем контакт: [addContact](https://ibb.co/4NvzT9h)
 
-- Удаляем контакт: [removeContact](https://prnt.sc/22yrd3p)
+- Удаляем контакт: [removeContact](https://ibb.co/9YXNhVs)
