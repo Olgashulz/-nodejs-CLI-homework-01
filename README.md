@@ -1,3 +1,17 @@
-nodejs-cli-homework-01
+# nodejs-cli-homework-01
 
-[Get](https://github.com/goitacademy/nodejs-homework/blob/master/homework-01/contacts.json)
+### Получаем и выводим весь список контактов в виде таблицы
+
+[getContactsList](https://prnt.sc/22yqumn)
+
+### Получаем контакт по id
+
+[getContactById](https://prnt.sc/22yr0za)
+
+### Добавялем контакт
+
+[addContact](https://prnt.sc/22yr9td)
+
+### Удаляем контакт
+
+[removeContact](https://prnt.sc/22yrd3p)

@@ -11,7 +11,6 @@ const addContact = async (name, email, phone) => {
             email,
             phone
         };
-        // console.log("newContact:", newContact);
         const contacts = await getContactsList();
         contacts.push(newContact);
         await updateContactsList(contacts);

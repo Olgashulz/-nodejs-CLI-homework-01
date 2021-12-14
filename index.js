@@ -4,7 +4,6 @@ const {
     listContacts,
     getContactById,
     addContact,
-    // updateContact,
     removeContact,
 } = require("./contacts");
 
@@ -19,9 +18,6 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
         case "add":
             addContact(name, email, phone);
             break;
-        // case "update":
-        //     updateContact(id, name, email, phone);
-        //     break;
         case "remove":
             removeContact(id);
             break;
@@ -44,22 +40,3 @@ program.parse(process.argv);
 const argv = program.opts();
 
 invokeAction(argv);
-
-
-// const id = "3";
-// const update = {
-//     name: "Anton Covtonuk",
-//     email: "Anton@gmail.com",
-//     phone: "+380980985141"
-// }
-
-// const contactData = {
-//     name: "Natalia Kurchak",
-//     email: "Natalia@gmail.com",
-//     phone: "+38093451223",
-// };
-
-// invokeAction({ action: "list" });
-// invokeAction({ action: "get", id });
-// invokeAction({ action: "add", ...contactData });
-// invokeAction({ action: "remove", id });

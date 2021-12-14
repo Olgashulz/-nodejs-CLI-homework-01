@@ -12,7 +12,6 @@ const removeContact = async (id) => {
         }
 
         const newContacts = contacts.filter((_, index) => index !== idx);
-        console.log(newContacts);
         await updateContactsList(newContacts);
 
         console.table(newContacts);
